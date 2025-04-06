@@ -8,7 +8,7 @@ CREATE TABLE employees (
     hire_date DATE                     -- Date the employee joined the company
 );
 
-
+-- inserting into table employees
 
 INSERT INTO employees VALUES (1, 'Alice', 'HR', 'East', 5000, TO_DATE('2020-01-10', 'YYYY-MM-DD'));
 INSERT INTO employees VALUES (2, 'Bob', 'HR', 'East', 5200, TO_DATE('2021-03-15', 'YYYY-MM-DD'));
@@ -18,3 +18,21 @@ INSERT INTO employees VALUES (5, 'Eve', 'Finance', 'East', 7000, TO_DATE('2019-1
 INSERT INTO employees VALUES (6, 'Frank', 'Finance', 'West', 6900, TO_DATE('2022-02-10', 'YYYY-MM-DD'));
 INSERT INTO employees VALUES (7, 'Grace', 'HR', 'East', 5300, TO_DATE('2022-05-05', 'YYYY-MM-DD'));
 INSERT INTO employees VALUES (8, 'Hank', 'Finance', 'East', 7000, TO_DATE('2023-01-01', 'YYYY-MM-DD'));
+
+
+-- compare with previous and next record
+
+SELECT emp_id,
+       emp_name,
+       department,
+       region,
+       salary,
+       hire_date,
+       salary - LAG(salary) OVER (ORDER BY emp_id) AS diff_prev,
+       salary - LEAD(salary) OVER (ORDER BY emp_id) AS diff_next,
+       CASE 
+           WHEN salary > LAG(salary) OVER (ORDER BY emp_id) THEN 'HIGHER'
+           WHEN salary < LAG(salary) OVER (ORDER BY emp_id) THEN 'LOWER'
+           ELSE 'EQUAL'
+       END AS compare_prev
+FROM employees;
