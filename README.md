@@ -54,9 +54,9 @@ Our project is based on a fictional `employees` table with the following structu
 ---
 
 ## 🏗️ Table Creation & Sample Data Insertion
-**File**: 👉 [Table Creation](https://github.com/ishimweMOSES/The-Semi-Colons/blob/7e7b2fc0bf834afc433643a57362f72aaf02d7d7/Separate%20Sql%20scripts/creating%20table%20synthax%20.sql
+**File**:  [Table Creation](https://github.com/ishimweMOSES/The-Semi-Colons/blob/7e7b2fc0bf834afc433643a57362f72aaf02d7d7/Separate%20Sql%20scripts/creating%20table%20synthax%20.sql
 )
-👉 [Inserting Into Table](https://github.com/ishimweMOSES/The-Semi-Colons/blob/7e7b2fc0bf834afc433643a57362f72aaf02d7d7/images/inserting%20into%20table.png)
+ [Inserting Into Table](https://github.com/ishimweMOSES/The-Semi-Colons/blob/7e7b2fc0bf834afc433643a57362f72aaf02d7d7/images/inserting%20into%20table.png)
 
 ```sql
 CREATE TABLE employees (
@@ -88,8 +88,8 @@ We created a simple but realistic dataset of employees, distributed across diffe
 ---
 
 ## 1️⃣ Compare with Previous and Next Records – `LAG()` & `LEAD()`
-**File**: `[Compare With Previous And Next Record](https://github.com/ishimweMOSES/The-Semi-Colons/blob/7e7b2fc0bf834afc433643a57362f72aaf02d7d7/images/compare%20.png)
- `
+**File**:[Compare With Previous And Next Record](https://github.com/ishimweMOSES/The-Semi-Colons/blob/7e7b2fc0bf834afc433643a57362f72aaf02d7d7/images/compare%20.png)
+ 
 
 ```sql
 SELECT emp_id,
@@ -122,7 +122,7 @@ Useful for HR departments to track salary progression.
 ---
 
 ## 2️⃣ Rank Within Each Department – `RANK()` & `DENSE_RANK()`
-**File**: `ranking_within_category.sql`
+**File**: [Ranking Within Each Department ](https://github.com/ishimweMOSES/The-Semi-Colons/blob/7e7b2fc0bf834afc433643a57362f72aaf02d7d7/images/ranking%20within%20each%20department.png)
 
 ```sql
 SELECT 
@@ -148,7 +148,8 @@ Determine fair ranking among employees or students.
 ---
 
 ## 3️⃣ Top 3 Salaries per Department
-**File**: `top_3_per_category.sql`
+**File**: [Top 3 Highest Salaries Per sales Department ](https://github.com/ishimweMOSES/The-Semi-Colons/blob/7e7b2fc0bf834afc433643a57362f72aaf02d7d7/images/top%203%20highest.png)
+ 
 
 ```sql
 WITH ranked_emps AS (
@@ -180,7 +181,8 @@ Performance reviews and rewards allocation.
 ---
 
 ## 4️⃣ First 2 Employees per Department – `ROW_NUMBER()`
-**File**: `earliest_records.sql`
+**File**: [First 2 Employees Per Department ](https://github.com/ishimweMOSES/The-Semi-Colons/blob/7e7b2fc0bf834afc433643a57362f72aaf02d7d7/images/first%202%20employees%20per%20department.png)
+ 
 
 ```sql
 WITH first_emps AS (
@@ -211,7 +213,7 @@ Identify veteran staff or earliest customers.
 ---
 
 ## 5️⃣ Aggregation with Window Functions – `MAX()` OVER
-**File**: `windowed_aggregation.sql`
+**File**:[Aggregation With Window Function ](https://github.com/ishimweMOSES/The-Semi-Colons/blob/7e7b2fc0bf834afc433643a57362f72aaf02d7d7/images/aggregation%20with%20window%20function.png)
 
 ```sql
 SELECT 
