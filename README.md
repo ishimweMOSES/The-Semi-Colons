@@ -76,6 +76,8 @@ INSERT INTO employees VALUES (7, 'Grace', 'HR', 'East', 5300, TO_DATE('2022-05-0
 INSERT INTO employees VALUES (8, 'Hank', 'Finance', 'East', 7000, TO_DATE('2023-01-01', 'YYYY-MM-DD'));
 
 ```
+![Alt Text](https://github.com/ishimweMOSES/The-Semi-Colons/blob/3dc3aaa9d11016ba97f08a93b47bbbe09419500e/images/table%20creation%20.png)
+
 
 ### 📝 Explanation
 We created a simple but realistic dataset of employees, distributed across different departments with varied salaries and hire dates. This setup helps in performing accurate window function analysis.
