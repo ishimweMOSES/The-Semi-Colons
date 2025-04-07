@@ -103,6 +103,9 @@ SELECT emp_id,
        END AS compare_prev
 FROM employees;
 ```
+![Alt Text](https://github.com/ishimweMOSES/The-Semi-Colons/blob/59f5079b7a07774fa50aef98b60bc4faf807cacf/images/compare%20.png
+)
+
 
 ### 📝 Explanation
 Compares current salary to the previous and next salary within each department.
@@ -125,6 +128,10 @@ SELECT
   DENSE_RANK() OVER (PARTITION BY department ORDER BY salary DESC) AS rank_dense
 FROM employees;
 ```
+
+![Alt Text](https://github.com/ishimweMOSES/The-Semi-Colons/blob/59f5079b7a07774fa50aef98b60bc4faf807cacf/images/ranking%20within%20each%20department.png
+)
+
 
 ### 📝 Explanation
 - `RANK()` skips ranks for ties
@@ -155,6 +162,9 @@ WITH ranked_emps AS (
 SELECT * FROM ranked_emps
 WHERE rank_position <= 3;
 ```
+![Alt Text](https://github.com/ishimweMOSES/The-Semi-Colons/blob/59f5079b7a07774fa50aef98b60bc4faf807cacf/images/top%203%20highest.png
+)
+
 
 ### 📝 Explanation
 Uses a CTE to rank and filter top 3 earners per department.
@@ -184,6 +194,8 @@ WITH first_emps AS (
 SELECT * FROM first_emps
 WHERE row_num <= 2;
 ```
+![Alt Text](https://github.com/ishimweMOSES/The-Semi-Colons/blob/59f5079b7a07774fa50aef98b60bc4faf807cacf/images/first%202%20employees%20per%20department.png)
+
 
 ### 📝 Explanation
 Finds the first two employees to be hired in each department.
@@ -206,6 +218,8 @@ SELECT
   MAX(salary) OVER () AS overall_max_salary
 FROM employees;
 ```
+![Alt Text](https://github.com/ishimweMOSES/The-Semi-Colons/blob/59f5079b7a07774fa50aef98b60bc4faf807cacf/images/aggregation%20with%20window%20function.png)
+
 
 ### 📝 Explanation
 Displays maximum salaries per department and across the whole company.
