@@ -77,7 +77,7 @@ INSERT INTO employees VALUES (8, 'Hank', 'Finance', 'East', 7000, TO_DATE('2023-
 
 ```
 ![Alt Text](https://github.com/ishimweMOSES/The-Semi-Colons/blob/3dc3aaa9d11016ba97f08a93b47bbbe09419500e/images/table%20creation%20.png)
-
+![Alt Text](https://github.com/ishimweMOSES/The-Semi-Colons/blob/bb84994eb453deede9c69c8546b3ea9936e54309/images/inserting%20into%20table.png)
 
 ### 📝 Explanation
 We created a simple but realistic dataset of employees, distributed across different departments with varied salaries and hire dates. This setup helps in performing accurate window function analysis.
