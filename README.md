@@ -76,6 +76,7 @@ INSERT INTO employees VALUES (7, 'Grace', 'HR', 'East', 5300, TO_DATE('2022-05-0
 INSERT INTO employees VALUES (8, 'Hank', 'Finance', 'East', 7000, TO_DATE('2023-01-01', 'YYYY-MM-DD'));
 
 ```
+### 📸 Screenshot of Output
 ![Alt Text](https://github.com/ishimweMOSES/The-Semi-Colons/blob/3dc3aaa9d11016ba97f08a93b47bbbe09419500e/images/table%20creation%20.png)
 ![Alt Text](https://github.com/ishimweMOSES/The-Semi-Colons/blob/bb84994eb453deede9c69c8546b3ea9936e54309/images/inserting%20into%20table.png)
 
@@ -103,15 +104,14 @@ SELECT emp_id,
        END AS compare_prev
 FROM employees;
 ```
-![Alt Text](https://github.com/ishimweMOSES/The-Semi-Colons/blob/59f5079b7a07774fa50aef98b60bc4faf807cacf/images/compare%20.png
-)
-
 
 ### 📝 Explanation
 Compares current salary to the previous and next salary within each department.
 
 ### 📸 Screenshot of Output
-`Insert your screenshot here`
+![Alt Text](https://github.com/ishimweMOSES/The-Semi-Colons/blob/59f5079b7a07774fa50aef98b60bc4faf807cacf/images/compare%20.png
+)
+
 
 ### ✅ Real-life Use
 Useful for HR departments to track salary progression.
@@ -129,16 +129,15 @@ SELECT
 FROM employees;
 ```
 
-![Alt Text](https://github.com/ishimweMOSES/The-Semi-Colons/blob/59f5079b7a07774fa50aef98b60bc4faf807cacf/images/ranking%20within%20each%20department.png
-)
-
 
 ### 📝 Explanation
 - `RANK()` skips ranks for ties
 - `DENSE_RANK()` doesn’t skip any rank numbers
 
 ### 📸 Screenshot of Output
-`Insert your screenshot here`
+![Alt Text](https://github.com/ishimweMOSES/The-Semi-Colons/blob/59f5079b7a07774fa50aef98b60bc4faf807cacf/images/ranking%20within%20each%20department.png
+)
+
 
 ### ✅ Real-life Use
 Determine fair ranking among employees or students.
@@ -162,15 +161,15 @@ WITH ranked_emps AS (
 SELECT * FROM ranked_emps
 WHERE rank_position <= 3;
 ```
-![Alt Text](https://github.com/ishimweMOSES/The-Semi-Colons/blob/59f5079b7a07774fa50aef98b60bc4faf807cacf/images/top%203%20highest.png
-)
 
 
 ### 📝 Explanation
 Uses a CTE to rank and filter top 3 earners per department.
 
 ### 📸 Screenshot of Output
-`Insert your screenshot here`
+
+![Alt Text](https://github.com/ishimweMOSES/The-Semi-Colons/blob/59f5079b7a07774fa50aef98b60bc4faf807cacf/images/top%203%20highest.png
+)
 
 ### ✅ Real-life Use
 Performance reviews and rewards allocation.
@@ -194,14 +193,14 @@ WITH first_emps AS (
 SELECT * FROM first_emps
 WHERE row_num <= 2;
 ```
-![Alt Text](https://github.com/ishimweMOSES/The-Semi-Colons/blob/59f5079b7a07774fa50aef98b60bc4faf807cacf/images/first%202%20employees%20per%20department.png)
 
 
 ### 📝 Explanation
 Finds the first two employees to be hired in each department.
 
 ### 📸 Screenshot of Output
-`Insert your screenshot here`
+
+![Alt Text](https://github.com/ishimweMOSES/The-Semi-Colons/blob/59f5079b7a07774fa50aef98b60bc4faf807cacf/images/first%202%20employees%20per%20department.png)
 
 ### ✅ Real-life Use
 Identify veteran staff or earliest customers.
@@ -218,14 +217,15 @@ SELECT
   MAX(salary) OVER () AS overall_max_salary
 FROM employees;
 ```
-![Alt Text](https://github.com/ishimweMOSES/The-Semi-Colons/blob/59f5079b7a07774fa50aef98b60bc4faf807cacf/images/aggregation%20with%20window%20function.png)
-
 
 ### 📝 Explanation
 Displays maximum salaries per department and across the whole company.
 
 ### 📸 Screenshot of Output
-`Insert your screenshot here`
+
+![Alt Text](https://github.com/ishimweMOSES/The-Semi-Colons/blob/59f5079b7a07774fa50aef98b60bc4faf807cacf/images/aggregation%20with%20window%20function.png)
+
+
 
 ### ✅ Real-life Use
 Benchmarking salary standards across teams.
