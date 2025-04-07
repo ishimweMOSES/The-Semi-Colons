@@ -254,12 +254,6 @@ Benchmarking salary standards across teams.
 
 ---
 
-## 🗓️ Submission Details
-- 📅 **Deadline**: April 17, 2025 at 11:59 PM
-- 📎 **Submission**: GitHub Repository Link
-
----
-
 ## 🙏 Special Thanks
 To our instructor for this exciting challenge and to our team for the collaboration! 🚀
 
@@ -268,6 +262,13 @@ To our instructor for this exciting challenge and to our team for the collaborat
 ## 🎉 Fun Fact
 > Why did the SQL developer break up with the semicolon? 
 > Because it was too **terminating**! 😂
+
+---
+
+## 🗓️ Submission Details
+- 📅 **Day we submitted**: April 7, 2025 at 11:59 PM
+- 📎 **Submission**: GitHub Repository Link
+
 
 
 
