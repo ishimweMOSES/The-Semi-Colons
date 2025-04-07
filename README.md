@@ -5,8 +5,8 @@
 ---
 
 ## 👥 Group Members
-- **Moise Ishimwe**
-- **Audace Karenzi**
+- **Moise Ishimwe 27657**
+- **Audace Karenzi 27473**
 
 ---
 
@@ -248,7 +248,7 @@ Benchmarking salary standards across teams.
 ---
 
 ## 🧰 Tech Stack
-- 🐘 PostgreSQL
+- 🐘 Oracle Sql Developer
 - 📂 Git & GitHub
 - 📜 Markdown for documentation
 
@@ -271,8 +271,9 @@ To our instructor for this exciting challenge and to our team for the collaborat
 ---
 
 ## 🗓️ Submission Details
-- 📅 **Day we submitted**: April 7, 2025 at 11:59 PM
-- 📎 **Submission**: GitHub Repository Link
+- 📅 **Day we submitted**: April 7, 2025 at 1:59 PM
+- 📎 **Submission**: [If You Wish To Download The Full SQL Script Click Here](https://github.com/ishimweMOSES/The-Semi-Colons/blob/bb170270018900311779d0e22107e330cfe11936/full%20synthax%20.sql)
+
 
 
 
